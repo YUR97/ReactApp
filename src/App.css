@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#serverInfo {
+  font-size: 17px;
+  font-family: 'Noto Sans', sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.time {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100px;
+  background-color: #062270;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#time {
+  margin: 0;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table {
+  text-align: center;
+}
+
+table td {
+  color: black;
+  width: 250px;
+  height: 100px;
+}
+
+.headTable td {
+  width: 250px;
+  height: 40px;
+  background-color: #062270;
+  color: white;
+}
+
+.tariffOptions {
+  height: 80px;
+  overflow: auto;
+}
+
+.options, .tariffs {
+  padding-right:5px;
+  padding-bottom: 20px;
+  height: 400px;
+  overflow: auto;
+}
+
+.options::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.options::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* Handle */
+.options::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: #062270;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.tariffs::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.tariffs::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* Handle */
+.tariffs::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: #062270;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.tariffOptions::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.tariffOptions::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* Handle */
+.tariffOptions::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: #062270;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.divTariffs, .divOptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  margin: 50px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 3px #575555;
 }
